@@ -1,0 +1,20 @@
+{
+	rules: {
+		'class-name-format':0,
+		'mixin-name-format':0,
+		'force-pseudo-nesting':0,
+		'hex-notation': 2,
+		'declarations-before-nesting': 2,
+		'indentation': ["error", "tab"],
+		'no-css-comments': 2,
+		'no-duplicate-properties': 2,
+		'no-empty-rulesets': 2,
+		'no-ids':2,
+		'no-important': 2,
+		'no-invalid-hex': 2,
+		'no-mergeable-selectors': 2,
+		'no-trailing-whitespace': 2,
+		'one-declaration-per-line': 2,
+		'no-color-literals': 2
+	}
+}

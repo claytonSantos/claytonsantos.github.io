@@ -1,0 +1,5 @@
+@mixin setPseudoSelectors {
+	&:hover, &:focus, &:active, &:active:focus {
+		@content;
+	}
+}
