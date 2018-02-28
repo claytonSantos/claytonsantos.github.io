@@ -71,7 +71,7 @@ function scripts () {
 function lintSass(){
 	return gulp.src(config.styles.watch)
 	.pipe(sassLint({
-		configFile: '.sasslintrc'
+		configFile: '.sass-lint.yml'
 	}))
 	.pipe(sassLint.format())
 	.pipe(sassLint.failOnError())
@@ -105,7 +105,7 @@ const styles = () => {
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions'],
 			cascade: false
-		}))		
+		}))
 		.pipe(rename({ extname: '.min.css' }))
 		.pipe(sourcemaps.write('/'))
 		.pipe(gulp.dest(config.styles.dest))
