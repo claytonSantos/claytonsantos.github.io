@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
 }
 body {
   font-size: 1.6rem;
@@ -9,13 +10,19 @@ html,
 body,
 main {
   height: 100%;
-  font-family: "PT Sans", sans-serif;
   padding: 0;
   margin: 0;
 }
 
-body {
-  background: #e8eaee;
+ul {
+  margin: 0;
+}
+ul li {
+  font-size: 14px;
+}
+
+a {
+  color: blue;
 }
 
 img {
@@ -24,6 +31,34 @@ img {
 
 .h-100 {
   height: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  color: #808080;
+  font-size: 18px;
+}
+
+p {
+  font-size: 18px;
+  color: black;
+}
+
+.small {
+  font-size: 13px;
+  color: #808080;
+}
+
+.title {
+  font-size: 1.6rem;
+  line-height: 32px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: 600;
 }
 
 .main {
@@ -36,6 +71,8 @@ img {
 
 .container {
   margin: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 @media only screen and (min-width: 576px) {
@@ -57,88 +94,33 @@ img {
 }
 
 .card {
-  position: relative;
-  overflow: hidden;
+  font-size: 20px;
+  color: rgb(26, 26, 26);
+  margin-bottom: 12px;
+}
+
+.card__link {
   display: flex;
-  background-color: white;
-  padding: 10px;
-  border-radius: 8px;
-  max-height: 160px;
-  min-height: 160px;
-  max-width: 600px;
-  margin-bottom: 16px;
-  transition: 0.3s all ease-out;
-  cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  align-items: center;
+  color: #505050;
+  margin-right: 8px;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-decoration: auto;
+  color: #505050;
+  transition: 0.3s all ease;
 }
 
 .card__title {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0;
-  color: #313237;
+  margin-right: 8px;
 }
 
-.card__img {
-  width: 600px;
-  width: 200px;
-  border-radius: 8px;
+.card__link:hover {
+  color: blue;
 }
 
-.overlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translateX(-100%);
-  transition: 0.3s all ease-out;
-  width: 210px;
-  height: 100%;
-  background: gray;
-}
-
-.overlay__link {
-  display: flex;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.card:hover .overlay {
-  transform: none;
-}
-
-.card--blue {
-  background-color: #0093e9;
-  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
-}
-
-.card-purple {
-  background-color: #21d4fd;
-  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
-}
-
-.card--fired {
-  background-color: #ffe53b;
-  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
-}
-
-.card-green {
-  background-color: #f4d03f;
-  background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
-}
-
-.card__content {
-  flex: 1;
-  padding-left: 16px;
-  overflow: hidden;
-}
-
-.card__text {
-  color: #738899;
+.card__link:hover .card__icon {
+  transform: translateX(45deg);
 }
 
 .about {
@@ -147,13 +129,12 @@ img {
 }
 
 .about__imgContainer {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 120px;
+  margin-top: 32px;
 }
 
 .about__img {
-  border-radius: 50%;
+  filter: grayscale(100%);
 }
 .about__text {
   font-size: 20px;
@@ -161,4 +142,29 @@ img {
   align-items: center;
   max-width: 320px;
   margin-left: 22px;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
 }
