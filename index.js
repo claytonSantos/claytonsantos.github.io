@@ -173,9 +173,9 @@ let routes = [
   { path: "*", component: PageNotFound },
 ];
 
-routes = [
-  { path: "*", component: UnderConstruction },
-]
+// routes = [
+//   { path: "*", component: UnderConstruction },
+// ]
 
 const router = new VueRouter({
   routes,
@@ -183,6 +183,14 @@ const router = new VueRouter({
 
 window.addEventListener('load', function () {
   const app = new Vue({
-    router
+    router,
+    data: {
+      themeIsDark: true,
+    },
+    methods: {
+      toggleTheme(){
+        this.themeIsDark = !this.themeIsDark
+      }
+    }
   }).$mount("#app");
 })

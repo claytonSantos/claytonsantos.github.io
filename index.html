@@ -17,8 +17,8 @@
     <title>Static Template</title>
   </head>
   <body>
-    <div id="app">
-      <aside class="app_aside">
+    <div id="app" v-bind:class="{ 'theme--light': themeIsDark }">
+      <aside class="app-aside">
         <div class="img-perfil">
           <img
             src="https://ca.slack-edge.com/TBSD0716V-U022N2C67JS-d5e2b97140e1-512"
@@ -31,15 +31,23 @@
         </nav>
       </aside>
       <main>
-        <header class="app-header">
-            <span class="material-icons">
+        <header class="app-header" 
+          v-on:click="toggleTheme()"
+          >
+            <div class="mode-icon-container">
+              <span class="material-icons light_mode-icon"
+            v-bind:class="{ 'active': !themeIsDark }"
+            >
               light_mode
             </span>
-            <span class="material-icons">
+            <span class="material-icons dark_mode-icon"
+            v-bind:class="{ 'active': themeIsDark }"
+            >
               dark_mode
             </span>
+            </div>
         </header>
-        <transition name="fade" v-on:before-enter="beforeEnter" mode="out-in">
+        <transition name="fade" mode="out-in">
           <router-view></router-view>
         </transition>
         <footer class="app_footer">

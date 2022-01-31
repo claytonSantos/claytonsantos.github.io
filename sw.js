@@ -2,7 +2,7 @@
 // var urlsToCache = [
 // 	'/',
 // 	'public/css/index.min.css',
-// 	'public/images/banner.jpg',
+// 	'public/images/banner.jpg', 
 // 	'public/js/index.min.js',
 // 	'public/sprite.svg'
 // ];

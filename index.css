@@ -1,16 +1,11 @@
 :root {
-    --color-bg: #161b22;
+    --aside-bg: #1d1f20;
+    --default-background: #181a1b;
     --bg-secondary: #252f3a;
-    --color-bg-header: linear-gradient(
-      180deg,
-      var(--bg-secondary) 0%,
-      #1f2730 100%,
-      
-    );
     --color-purple: #8c7ae6;
     --color-blue: #17c0eb;
-    --text-color: #000;
-    --aside-bg: #f7f7f7;
+    --text-color: #e8e6e3;
+    
     
     --mq-sm:  576px; /* 576px 36em */ 
     --mq-md: 48em; /* 768px */
@@ -21,9 +16,21 @@
   
   @supports (--css: variables) {
     .theme--light {
+      --aside-bg: #f7f7f7;
+      --default-background: #FFF;
+      --bg-secondary: #252f3a;
+      --color-bg: #161b22;
+      --color-purple: #8c7ae6;
+      --color-blue: #17c0eb;
+      --text-color: #000;
+      
+      
+      --mq-sm:  576px; /* 576px 36em */ 
+      --mq-md: 48em; /* 768px */
+      --mq-lg: 62em; /* 992px */
+      --mq-xl: 90em; /* 1440px */
     }
   }
-  
   
   html,
   body {
@@ -55,7 +62,7 @@
     display: flex;
   }
   
-  aside {
+  .app-aside {
     display: none;
     flex-direction: column;
     align-items:center;
@@ -63,11 +70,12 @@
     padding: 1rem;
     background-color: var(--aside-bg);
     background: var(--aside-bg);
+    transition: all linear 0.2s;
   }
 
  
 @media screen and (min-width: 600px) {
-  .app_aside {
+  .app-aside {
     display: flex;
   }
 }
@@ -84,7 +92,7 @@
     display: flex;
     margin-bottom: 16px;
     text-decoration: none;
-    color: #252f3a;
+    color: var(--text-color);
     font-size: 1.2rem;
   }
 
@@ -94,9 +102,17 @@
   
   main {
     flex: 1;
-    background: white;
-    overflow-y: scroll;
+    background: var(--default-background);
+    background-color: var(--default-background);
+    overflow-y: auto;
     margin-bottom: 72px;
+    transition: all linear 0.2s;
+  }
+
+  @media screen and (min-width: 600px) {
+    main {
+      margin-bottom: 0;
+    }
   }
 
   /* aside */
@@ -104,7 +120,7 @@
   .img-perfil {
     border-radius: 50%;
     overflow: hidden;
-    max-width: 324px;
+    max-width: 280px;
   }
 
   .home {
@@ -132,6 +148,7 @@
 
   .home__profile-description {
     text-align: center;
+    color: var(--text-color);
   }
 
   @media screen and (min-width: 600px) {
@@ -145,6 +162,7 @@
 
   .timeline{
     padding: 1rem;
+    color: var(--text-color);
   }
 
   .container-timeline {
@@ -395,7 +413,7 @@ h3 {
 }
 
 .app-header {
-  display: none;
+  display: flex;
   justify-content: flex-end;
 }
 
@@ -434,4 +452,50 @@ h3 {
   .container {
     max-width: 960px;
   }
+}
+header {
+  position: relative;
+}
+
+.light_mode-icon {
+  color: yellow;
+}
+
+.dark_mode-icon {
+  color: darkgray;
+}
+
+.dark_mode-icon.active {
+  animation: dark 0.1s 0.5s forwards;
+}
+
+.light_mode-icon.active {
+  animation: light 0.1s 0.5s forwards;
+}
+
+@keyframes dark {
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes light {
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.mode-icon-container {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 40px;
+}
+
+.light_mode-icon,
+.dark_mode-icon {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  transform: translateY(-130%);
+  cursor: pointer;
 }
