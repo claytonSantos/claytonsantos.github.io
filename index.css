@@ -115,12 +115,6 @@ main {
     max-width: 280px;
 }
 
-@media (max-width: 576px) {
-    .home .img-perfil {
-        display: block;
-    }
-}
-
 .home {
     display: flex;
     flex-direction: column;
@@ -128,8 +122,14 @@ main {
     align-items: center;
 }
 
-.home .img-perfil {
+.home-img__perfil {
     display: none;
+}
+
+@media (max-width: 576px) {
+    .home-img__perfil {
+        display: block;
+    }
 }
 
 .home__title {

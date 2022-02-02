@@ -1,6 +1,6 @@
 const Experiencia = { template: `
   <section class="home layout--section" key="1" >
-    <div class="img-perfil">
+    <div class="img-perfil home-img__perfil">
       <img
         src="https://ca.slack-edge.com/TBSD0716V-U022N2C67JS-d5e2b97140e1-512"
       />
@@ -87,7 +87,7 @@ const Projects = { template: `
     </li>
     </ul>
   </section>
-`}
+` }
 
 const Timeline = { template: `
 <section class="timeline layout--section" key="3">
@@ -159,11 +159,11 @@ const Timeline = { template: `
     </ul>
   </div>
 </section>
-`  };
+` };
 
 
 const PageNotFound = {
-  template: `<div class="page-not-found">
+    template: `<div class="page-not-found">
     <div>
       <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_GIyuXJ.json"  
         background="transparent"  speed="1"
@@ -174,12 +174,11 @@ const PageNotFound = {
     <p class="page-not-found__description">
       Página não encontrada.
     </p>
-  </div>` 
+  </div>`
 }
 
 const UnderConstruction = {
-  template: 
-  `<div class="underConstruction">
+    template: `<div class="underConstruction">
     <div class="underConstruction__img-container">
       <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_AQcLsD.json"
         background="transparent" 
@@ -191,16 +190,16 @@ const UnderConstruction = {
     <p class="page-not-found__description">
       Página em construção
     </p>
-  </div>` 
-} 
+  </div>`
+}
 
 let routes = [
-  { path: "/", component: Experiencia },
-  { path: "/experiencia", component: Experiencia },
-  { path: "/timeline", component: Timeline },
-  { path: "/projects", component: Projects },
-  { path: "/construcao", component: UnderConstruction },
-  { path: "*", component: PageNotFound },
+    { path: "/", component: Experiencia },
+    { path: "/experiencia", component: Experiencia },
+    { path: "/timeline", component: Timeline },
+    { path: "/projects", component: Projects },
+    { path: "/construcao", component: UnderConstruction },
+    { path: "*", component: PageNotFound },
 ];
 
 // routes = [
@@ -208,19 +207,19 @@ let routes = [
 // ]
 
 const router = new VueRouter({
-  routes,
+    routes,
 });
 
-window.addEventListener('load', function () {
-  const app = new Vue({
-    router,
-    data: {
-      themeIsDark: true,
-    },
-    methods: {
-      toggleTheme(){
-        this.themeIsDark = !this.themeIsDark
-      }
-    }
-  }).$mount("#app");
+window.addEventListener('load', function() {
+    const app = new Vue({
+        router,
+        data: {
+            themeIsDark: true,
+        },
+        methods: {
+            toggleTheme() {
+                this.themeIsDark = !this.themeIsDark
+            }
+        }
+    }).$mount("#app");
 })
