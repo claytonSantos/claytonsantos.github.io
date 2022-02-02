@@ -5,14 +5,6 @@
     --color-purple: #8c7ae6;
     --color-blue: #17c0eb;
     --text-color: #e8e6e3;
-    --mq-sm: 576px;
-    /* 576px 36em */
-    --mq-md: 48em;
-    /* 768px */
-    --mq-lg: 62em;
-    /* 992px */
-    --mq-xl: 90em;
-    /* 1440px */
 }
 
 @supports (--css: variables) {
@@ -24,14 +16,6 @@
         --color-purple: #8c7ae6;
         --color-blue: #17c0eb;
         --text-color: #000;
-        --mq-sm: 576px;
-        /* 576px 36em */
-        --mq-md: 48em;
-        /* 768px */
-        --mq-lg: 62em;
-        /* 992px */
-        --mq-xl: 90em;
-        /* 1440px */
     }
 }
 
@@ -150,7 +134,6 @@ main {
 }
 
 .container-timeline {
-    /* Used to position the left vertical line */
     position: relative;
 }
 
@@ -159,18 +142,14 @@ main {
 }
 
 .container__line {
-    /* Border */
     border-right: 2px solid #aaa;
-    /* Positioned at the left */
     left: 10px;
     position: absolute;
     top: 0px;
-    /* Take full height */
     height: 100%;
 }
 
 .container__items {
-    /* Reset styles */
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -284,20 +263,6 @@ main {
 
 h3 {
     font-size: 2.3rem;
-}
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -8px;
-    margin-right: -8px;
-}
-
-.card__item {
-    /* There will be 4 cards per row */
-    flex-basis: 25%;
-    padding-left: 8px;
-    padding-right: 8px;
 }
 
 .codesandbox-list {
