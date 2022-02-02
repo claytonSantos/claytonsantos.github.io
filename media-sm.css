@@ -1,0 +1,24 @@
+.app-aside {
+    display: flex;
+}
+
+main {
+    margin-bottom: 0;
+}
+
+.home__soft-skills {
+    text-align: start;
+}
+
+.app_footer {
+    display: none;
+    background-color: var(--aside-bg);
+}
+
+.home__title-container {
+    display: flex;
+}
+
+.page-not-found__description {
+    font-size: 2rem;
+}
