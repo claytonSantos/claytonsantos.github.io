@@ -341,7 +341,7 @@ h3 {
     background-color: var(--aside-bg);
 }
 
-.app_footer>a {
+.app_footer__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -350,7 +350,7 @@ h3 {
     color: var(--text-color)
 }
 
-.app_footer>a>span {
+.app_footer__icon {
     width: 24px;
     width: 34px;
     font-size: 34px;
@@ -367,10 +367,7 @@ h3 {
 }
 
 .fade-enter,
-.fade-leave-to
-/* .fade-leave-active below version 2.1.8 */
-
-{
+.fade-leave-to {
     opacity: 0;
 }
 
