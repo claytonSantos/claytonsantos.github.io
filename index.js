@@ -10,7 +10,7 @@ const Experiencia = { template: `
     </div>
    <div class="home__profile-description">
     <h2>Eu sou um Front End Developer</h2>
-    <p>Sou desenvolvedor Front End com 4 anos de experiência. Focado em Reactjs/Javascript e seu ecossistema: Next Js, Redux, Hooks, Redux-Thunk, Redux Saga, Formik, React-router, Styled Componente, css modules,  HTML5, CSS3|Sass| Bem css. </p>
+    <p>Sou desenvolvedor Front End com 5+ anos de experiência. Focado em Reactjs/Javascript e seu ecossistema: Next Js, Redux, Hooks, Redux-Thunk, Redux Saga, Formik, React-router, Styled Componente, css modules,  HTML5, CSS3|Sass| Bem css. </p>
    </div>
   </section>
 ` };
