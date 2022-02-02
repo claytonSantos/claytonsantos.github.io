@@ -85,7 +85,7 @@ body {
     align-items: center;
 }
 
-.aside-nav>a {
+.aside-nav__link {
     display: flex;
     margin-bottom: 16px;
     text-decoration: none;
@@ -93,7 +93,7 @@ body {
     font-size: 1.2rem;
 }
 
-.aside-nav>a:hover {
+.aside-nav__link:hover {
     color: var(--color-blue)
 }
 
