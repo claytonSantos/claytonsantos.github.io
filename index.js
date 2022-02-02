@@ -9,7 +9,7 @@ const Experiencia = { template: `
       <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_1cazwtnc.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
     </div>
    <div class="home__profile-description">
-    <h2>I am Front End Developer</h2>
+    <h2>Eu sou um Front End Developer</h2>
     <p>Sou desenvolvedor Front End com 4 anos de experiência. Focado em Reactjs/Javascript e seu ecossistema: Next Js, Redux, Hooks, Redux-Thunk, Redux Saga, Formik, React-router, Styled Componente, css modules,  HTML5, CSS3|Sass| Bem css. </p>
    </div>
   </section>
@@ -24,31 +24,67 @@ const Projects = { template: `
     <p>Demos de Apps simples, feito de maneiras ou com bibliotecas diferentes.</p>
     <ul id="codesandbox-list" class="codesandbox-list">
       <li class="codesandbox-list__item">
-        <a class="codesandbox-list__link" target="_blank">
+        <a class="codesandbox-list__link" target="_blank" href="https://codesandbox.io/s/todo-app-pure-react-state-management-bm7uk">
           <h3 class="codesandbox-list__title">
           Todo app - React
           </h3>
         </a>
           <div class="icon-box">
-            <span class="material-icons tech-list__icon">add</span>
+            <span class="material-icons tech-list__icon">verified</span>
             <p>Gerenciador de estado do próprio React</div>
           </div>
           <div class="icon-box">
-          <span class="material-icons tech-list__icon">add</span>
-          <p>Gerenciador de estado do próprio React</div>
+            <span class="material-icons tech-list__icon">verified</span>
+            <p>Gerenciador de estado do próprio React</div>
         </div>
       </li>
       <li class="codesandbox-list__item">
-        <a class="codesandbox-list__link" target="_blank">
+        <a class="codesandbox-list__link" target="_blank" href="https://codesandbox.io/s/todo-with-pure-redux-12keo">
           <h3 class="codesandbox-list__title">
           Todo app - React
           </h3>
         </a>
           <div class="icon-box">
-            <span class="material-icons tech-list__icon">add</span>
-            <p>Gerenciador de estado do próprio React</div>
+            <span class="material-icons tech-list__icon">verified</span>
+            <p>Gerenciador de estado: redux</div>
+          </div>
+          <div class="icon-box">
+            <span class="material-icons tech-list__icon">verified</span>
+            <p>Redux Thunk</div>
           </div>
       </li>
+
+      <li class="codesandbox-list__item">
+        <a class="codesandbox-list__link" target="_blank" href="https://codesandbox.io/s/todo-app-with-redux-toolkit-create-reducer-state-management-1dl4f">
+          <h3 class="codesandbox-list__title">
+          Todo app - React
+          </h3>
+        </a>
+          <div class="icon-box">
+            <span class="material-icons tech-list__icon">verified</span>
+            <p>Gerenciador de estado: Redux Tookit</div>
+          </div>
+          <div class="icon-box">
+            <span class="material-icons tech-list__icon">verified</span>
+            <p>Usando <strong>createReducer</strong> do redux toolkit</div>
+          </div>
+      </li>
+
+      <li class="codesandbox-list__item">
+      <a class="codesandbox-list__link" target="_blank" href="https://codesandbox.io/s/todo-app-with-redux-toolkit-slice-state-management-tgdzk?file=/src/App.js">
+        <h3 class="codesandbox-list__title">
+        Todo app - React
+        </h3>
+      </a>
+        <div class="icon-box">
+          <span class="material-icons tech-list__icon">verified</span>
+          <p>Gerenciador de estado: Redux Tookit</div>
+        </div>
+        <div class="icon-box">
+          <span class="material-icons tech-list__icon">verified</span>
+          <p>Usando <strong>createSlice</strong> do redux toolkit</div>
+      </div>
+    </li>
     </ul>
   </section>
 `}
@@ -72,7 +108,9 @@ const Timeline = { template: `
                 <h3 class="container__title">Cwi</h3>
             </div>
             <div class="container__desc">
-                Cargo: Front End Developer
+                <p>Cargo: Front End Developer</p>
+                <p>Período: maio/2021 - até o momento</p>
+                <p>Reactjs, React Native e seus ecossistemas.</p>
             </div>
         </li>
 
@@ -85,18 +123,12 @@ const Timeline = { template: `
             </div>
             <div class="container__desc">
             <div>
-              Cargo: Front End Developer
-              Período: nov/2020 -  até o momento
-              Desenvolvedor Front End, atuando com React js/Next js e todo o seu ecossistema.
-              Definir libs amplamente utilizadas na aplicação.
-              Desenvolvi features com foco em componentização.
-              Foco na utilização de recursos novos e performáticos do React. 
-              Integração de Apis/microsserviços
-              Participei de uma equipe de metodologia ágil(Scrum)
+              <p>Cargo: Front End Developer</p>
+              <p>Período: nov/2020 - maio-2021</p>
+              <p>Reactjs/NextJs e seus ecossistemas.</p>
             </div>
             </div>
         </li>
-
         <li class="container__item">
             <div class="container__top">
                 <div class="container__circle"></div>
@@ -105,25 +137,23 @@ const Timeline = { template: `
                 </h3>
             </div>
             <div class="container__desc">
-            Cargo: Front End Developer
-            Período: 06/2018 - 12/09/2019
-            Atuei como desenvolvedor Reactjs. 
+              <p>Cargo: Front End Developer</p>
+              <p>Período: set/2019 - out/2020</p>
+              <p>Reactjs seus ecossistemas.</p>
             </div>
         </li>
-
         <li class="container__item">
             <div class="container__top">
                 <div class="container__circle"></div>
                 <div class="container__title">
                   Softplan
-                 
                 </div>
             </div>
             <div class="container__desc">
-            Cargo: Estagiário Front End Developer
-            Período: 06/2018 - 09/2019
-            Atuar junto com o design para a construção de um design system.
-            Criar interfaces com Reactjs.
+            <p>Cargo: Estagiário Front End Developer</p>
+            <p>Período: jun/2018 - set/2019</p>
+            <p>Atuar junto com o design para a construção de um design system.
+            Criar componentes com Reactjs.</p>
             </div>
         </li>
     </ul>

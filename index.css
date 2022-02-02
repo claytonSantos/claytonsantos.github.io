@@ -97,7 +97,7 @@
   }
 
   .aside-nav > a:hover {
-    color: var(--color-purple)
+    color: var(--color-blue)
   }
   
   main {
@@ -213,16 +213,27 @@
 }
 
 .container__title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 0;
   margin-bottom: 4px;
   flex: 1;
-  color: var(--color-purple);
-  font-weight: bold;
+  color: var(--color-blue);
+  font-weight: normal;
 }
 
 .container__desc {
   margin-left: 33px;
+}
+
+.container__desc p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.icon-box strong {
+  color: var(--color-blue);
+  text-decoration: underline;
+  font-weight: normal;
 }
 
 .layout--section {
@@ -326,6 +337,7 @@ h3 {
   display: flex;
   vertical-align: middle;
   align-items: center;
+  margin-left: 1rem;
 }
 .icon-box  > p{
   margin: 4px;
@@ -386,7 +398,7 @@ h3 {
 }
 
 .router-link-active {
-  color: var(--color-purple) !important;
+  color: var(--color-blue) !important;
   font-weight:bold !important;
 }
 
@@ -466,11 +478,11 @@ header {
 }
 
 .dark_mode-icon.active {
-  animation: dark 0.1s 0.5s forwards;
+  animation: dark 0.1s 0.2s forwards;
 }
 
 .light_mode-icon.active {
-  animation: light 0.1s 0.5s forwards;
+  animation: light 0.1s 0.2s forwards;
 }
 
 @keyframes dark {
