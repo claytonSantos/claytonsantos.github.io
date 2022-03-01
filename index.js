@@ -32,81 +32,48 @@ var Projects = Vue.component('projects', {
     <h2>Projects</h2>
     <p>Demos de Apps simples, feito de maneiras ou com bibliotecas diferentes.</p>
     <ul id="codesandbox-list" class="codesandbox-list">
-      <li class="codesandbox-list__item">
-        <a  @click.prevent="handleGoSandBoxModel('https://codesandbox.io/s/todo-app-pure-react-state-management-bm7uk')"
-          class="codesandbox-list__link">
-          <h3 class="codesandbox-list__title">
-          Todo app - React
-          </h3>
-          <span class="material-icons codesandbox-list_new-tab-icon">
-            open_in_new
-          </span>
-        </a>
-          <div class="icon-box">
-            <span class="material-icons tech-list__icon">verified</span>
-            <p>Gerenciador de estado do próprio React</div>
-          </div>
-          <div class="icon-box">
-            <span class="material-icons tech-list__icon">verified</span>
-            <p>Gerenciador de estado do próprio React</div>
-        </div>
-      </li>
-      <li class="codesandbox-list__item">
-        <a class="codesandbox-list__link" target="_blank" href="https://codesandbox.io/s/todo-with-pure-redux-12keo">
-          <h3 class="codesandbox-list__title">
-          Todo app - React
-          </h3>
-            <span class="material-icons codesandbox-list_new-tab-icon">
-            open_in_new
-          </span>
-        </a>
-          <div class="icon-box">
-            <span class="material-icons tech-list__icon">verified</span>
-            <p>Gerenciador de estado: redux</div>
-          </div>
-          <div class="icon-box">
-            <span class="material-icons tech-list__icon">verified</span>
-            <p>Redux Thunk</div>
-          </div>
-      </li>
-
-      <li class="codesandbox-list__item">
-        <a class="codesandbox-list__link" target="_blank" href="https://codesandbox.io/s/todo-app-with-redux-toolkit-create-reducer-state-management-1dl4f">
-          <h3 class="codesandbox-list__title">
-          Todo app - React
-          </h3>
-            <span class="material-icons codesandbox-list_new-tab-icon">
-            open_in_new
-          </span>
-        </a>
-          <div class="icon-box">
-            <span class="material-icons tech-list__icon">verified</span>
-            <p>Gerenciador de estado: Redux Tookit</div>
-          </div>
-          <div class="icon-box">
-            <span class="material-icons tech-list__icon">verified</span>
-            <p>Usando <strong>createReducer</strong> do redux toolkit</div>
-          </div>
-      </li>
-
-      <li class="codesandbox-list__item">
-      <a class="codesandbox-list__link" target="_blank" href="https://codesandbox.io/s/todo-app-with-redux-toolkit-slice-state-management-tgdzk?file=/src/App.js">
+    <li class="codesandbox-list__item">
+      <a  @click.prevent="handleGoSandBoxModel('https://codesandbox.io/s/lampada-toggle-f32gc')"
+        class="codesandbox-list__link">
         <h3 class="codesandbox-list__title">
-        Todo app - React
+          Entenda o estado básico do react com esse app Minimalista.
         </h3>
         <span class="material-icons codesandbox-list_new-tab-icon">
           open_in_new
         </span>
       </a>
+      <div class="icon-box">
+        <span class="material-icons tech-list__icon">verified</span>
+        <p>Enteda o fluxo básico do UseState.</div>
+      </div>
+     </li>
+    <li class="codesandbox-list__item">
+      <a  @click.prevent="handleGoSandBoxModel('https://codesandbox.io/s/todo-app-pure-react-state-management-bm7uk')"
+        class="codesandbox-list__link">
+        <h3 class="codesandbox-list__title">
+          Todo app - React
+        </h3>
+        <span class="material-icons codesandbox-list_new-tab-icon">
+          open_in_new
+        </span>
+        </a>
         <div class="icon-box">
           <span class="material-icons tech-list__icon">verified</span>
-          <p>Gerenciador de estado: Redux Tookit</div>
+          <p>Estado do app gerenciado pelo hook useReducer, do próprio React.</p>
         </div>
         <div class="icon-box">
           <span class="material-icons tech-list__icon">verified</span>
-          <p>Usando <strong>createSlice</strong> do redux toolkit</div>
-      </div>
-    </li>
+          <p>Renderização condicional</p>
+        </div>
+        <div class="icon-box">
+          <span class="material-icons tech-list__icon">verified</span>
+          <p>Validação simples de um input</p>
+        </div>
+        <div class="icon-box">
+          <span class="material-icons tech-list__icon">verified</span>
+          <p>uso de hooks useRef, useMemo, useCalback etc.</p>
+        </div>
+      </li>
     </ul>
     <div class="modal-wrapper"
       v-bind:class="{ 'modal-wrapper__visible': isVisibleDialog }">
