@@ -29,7 +29,7 @@ var Projects = Vue.component('projects', {
     <div class="timeline__main-img">
     <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_kh0i5hia.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
     </div>
-    <h2>Projects</h2>
+    <h2>Projetos</h2>
     <p>Demos de Apps simples, feito de maneiras ou com bibliotecas diferentes.</p>
     <ul id="codesandbox-list" class="codesandbox-list">
     <li class="codesandbox-list__item">
@@ -44,7 +44,7 @@ var Projects = Vue.component('projects', {
       </a>
       <div class="icon-box">
         <span class="material-icons tech-list__icon">verified</span>
-        <p>Enteda o fluxo básico do UseState.</div>
+        <p>Entenda o fluxo básico do estado do react.</div>
       </div>
      </li>
     <li class="codesandbox-list__item">
@@ -59,19 +59,37 @@ var Projects = Vue.component('projects', {
         </a>
         <div class="icon-box">
           <span class="material-icons tech-list__icon">verified</span>
-          <p>Estado do app gerenciado pelo hook useReducer, do próprio React.</p>
+          <p>
+            Estado gerenciado pelo useReducer, do react e uso dos outros hooks. 
+          </p>
+        </div>
+      </li>
+      <li class="codesandbox-list__item">
+      <a  @click.prevent="handleGoSandBoxModel('https://codesandbox.io/s/todo-app-with-redux-toolkit-slice-state-management-tgdzk?file=/readme.md')"
+        class="codesandbox-list__link">
+        <h3 class="codesandbox-list__title">
+          Todo app - React + Redux Toolkit
+        </h3>
+        <span class="material-icons codesandbox-list_new-tab-icon">
+          open_in_new
+        </span>
+        </a>
+        <p>Redux toolkit é fantastico.
+        Ele é um conjunto oficial de ferramentas que melhoram o desenvolvimento de redux.</p>
+        <div class="icon-box">
+          <span class="material-icons tech-list__icon">verified</span>
+          <p>Estado Global usando Redux Tookit</p>
         </div>
         <div class="icon-box">
           <span class="material-icons tech-list__icon">verified</span>
-          <p>Renderização condicional</p>
+          <p>Criação de seletores memoizados</p>
         </div>
-        <div class="icon-box">
+        <div class="icon-box" style="display: flex, align-items: center">
           <span class="material-icons tech-list__icon">verified</span>
-          <p>Validação simples de um input</p>
-        </div>
-        <div class="icon-box">
-          <span class="material-icons tech-list__icon">verified</span>
-          <p>uso de hooks useRef, useMemo, useCalback etc.</p>
+          <p>Não se preocupe com atualizações profundas com spread operator.
+          Tookit facilita a vida. <span class="material-icons">
+          favorite
+          </span></p>
         </div>
       </li>
     </ul>

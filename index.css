@@ -230,9 +230,8 @@ main {
 }
 
 .codesandbox-list__title {
-    margin: 0;
-    margin-bottom: 4px;
-    font-size: 1.5rem;
+    margin: 0 0 4px 0;
+    font-size: 1.3rem;
     font-weight: normal;
     cursor: pointer;
     transition: all 0.2s linear;
@@ -297,8 +296,10 @@ h3 {
     margin-left: 1rem;
 }
 
-.icon-box>p {
+.icon-box > p {
     margin: 4px;
+    display: flex;
+    align-items: center;
 }
 
 
