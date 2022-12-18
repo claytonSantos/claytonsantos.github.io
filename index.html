@@ -1,60 +1,284 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<script src="index.js"></script>
+		<link rel="stylesheet" href="index.css" />
+		<link href="media-sm.css" rel="stylesheet" media="(min-width: 600px)" />
+		<title>Clayton Santos - Desenvolvedor Front end</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-    <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="index.js"></script>
-    <link rel="stylesheet" href="index.css" />
-    <link href="media-sm.css" rel="stylesheet" media="(min-width: 600px)">
-    <title>Clayton Santos - Desenvolvedor Front end</title>
-</head>
+	<body>
+		<div class="container">
+			<div class="img-perfil">
+				<img
+					src="https://ca.slack-edge.com/TBSD0716V-U022N2C67JS-d5e2b97140e1-512"
+				/>
+			</div>
+			<div class="home__profile-description">
+				<h2 class="home-title">
+					Olá, me chamo Clayton. Desenvolvedor Front End e resolvedor de
+					problemas profissional.
+				</h2>
+				<p>
+					Olá, me chamo Clayton. Sou desenvolvedor Frontend e trabalho
+					remotamente para uma empresa aqui de Santa Catarina.
+				</p>
+				<p>
+					Meu primeiro contato com programação foi na faculdade. Diferente de
+					muitas pessoas da universidade, eu não tinha uma base na programação.
+					Eu experimentei as linguagens C e JAVA. Eu curtia criar interfaces em
+					java. Eu precisava de uma oportunidade na área, e o mercado exigia
+					coisas diferentes do que a universidade ensinava. Eu sabia que
+					precisava estudar algumas coisas sozinho.
+				</p>
+				<h5>Primeiro Estágio</h5>
+				<p>
+					Eu comprei um livro de Hml5/Css3 e comecei a praticar. Depois de
+					alguns dias eu consegui um estágio numa agência de marketing digital.
+					Todos os layouts eram exclusivos por cliente, então eu pude criar
+					sites com diversos tipos de layouts, usando html, css, javascript e
+					wordpress.
+				</p>
+				<h5>Hackaton</h5>
+				<p>
+					Um tempo depois, eu fui selecionado em um hackaton para outro estágio.
+					Eu era responsável por criar os componentes criados pelo UX, com html,
+					css e javascript puro. Eu estudei bastante sobre como criar
+					componentes com css escalável e reutilizável. Eu aprendi muito como
+					usar a api do Browser para controlar os meus componentes apenas com
+					Javascript. Aqui eu trabalhei um pouco com Reactjs.
+				</p>
+				<h5>Empregos</h5>
+				<p>
+					Eu fiquei pouco mais de um ano no meu último estágio, até receber uma
+					proposta para trabalhar profissionalmente como FrontEnd. Desde então,
+					eu tenho trabalhado e estudado muito Javascript e Reactjs. Eu já usei
+					outras libs com Vuejs e Angular, mas minha paixão foi pelo React, Por
+					isso, eu venho me aperfeiçoando sobre aspectos de perfomance, padrões
+					e etc. Esses estudos, também fizeram com que eu contribuísse mais com
+					a minha equipe, fazendo revisões de códigos do meus colegas, propondo
+					soluções e removendo anti-padrões que o tempo fixou na base de código.
+				</p>
+			</div>
+		</div>
+		<section class="home__section container anime">
+			<h2>Minhas Habilidades</h2>
+			<picture>
+				<source media="(min-width:577px)" srcset="./assets/cubos-large.jpg" />
+				<source media="(min-width:0px)" srcset="./assets/cubos-640x360.jpg" />
+				<!-- <source media="(min-width:465px)" srcset="img_white_flower.jpg" /> -->
+				<img src="img_orange_flowers.jpg" alt="Flowers" style="width: auto" />
+			</picture>
+			<div class="card-list cl1 slide-top">
+				<div class="card-list__item card">
+					<span class="material-icons">verified</span>
+					<p>Reactjs</p>
+				</div>
 
-<body>
-    <div id="app" v-bind:class="{ 'theme--light': themeIsDark }">
-        <aside class="app-aside">
-            <div class="img-perfil">
-                <img src="https://ca.slack-edge.com/TBSD0716V-U022N2C67JS-d5e2b97140e1-512" />
-            </div>
-            <nav class="aside-nav">
-                <router-link to="/experiencia" class="aside-nav__link">Experiencia</router-link>
-                <router-link to="/timeline" class="aside-nav__link">Timeline</router-link>
-                <router-link to="/projects" class="aside-nav__link">Mini Projects</router-link>
-            </nav>
-        </aside>
-        <main>
-            <header class="app-header" v-on:click="toggleTheme()">
-                <div class="mode-icon-container">
-                    <span class="material-icons light_mode-icon" v-bind:class="{ 'active': !themeIsDark }">
-              light_mode
-            </span>
-                    <span class="material-icons dark_mode-icon" v-bind:class="{ 'active': themeIsDark }">
-              dark_mode
-            </span>
-                </div>
-            </header>
-            <transition name="fade" mode="out-in">
-                <router-view></router-view>
-            </transition>
-            <footer class="app_footer">
-                <router-link to="/experiencia" class="app_footer__link">
-                    <span class="material-icons md-36 app_footer__icon">articleicon</span>
-                </router-link>
-                <router-link to="/timeline" class="app_footer__link">
-                    <span class="material-icons md-36 app_footer__icon">timelineicon</span>
-                </router-link>
-                <router-link to="/projects" class="app_footer__link">
-                    <span class="material-icons md-36 app_footer__icon">codeicon</span>
-                </router-link>
-            </footer>
-        </main>
-    </div>
-</body>
-
+				<div class="card-list__item card">
+					<span class="material-icons">verified</span>
+					<p>Javascript</p>
+				</div>
+				<div class="card-list__item card">
+					<span class="material-icons">verified</span>
+					<p>Redux</p>
+				</div>
+				<div class="card-list__item card">
+					<span class="material-icons">verified</span>
+					<p>Redux-Saga</p>
+				</div>
+				<div class="card-list__item card">
+					<span class="material-icons">verified</span>
+					<p>Redux-Thunk</p>
+				</div>
+				<div class="card-list__item card">
+					<span class="material-icons">verified</span>
+					<p>Formik</p>
+				</div>
+				<div class="card-list__item card">
+					<span class="material-icons">verified</span>
+					<p>Html5</p>
+				</div>
+				<div class="card-list__item card">
+					<span class="material-icons">verified</span>
+					<p>Css3</p>
+				</div>
+				<div class="card-list__item card">
+					<span class="material-icons">verified</span>
+					<p>Bem css</p>
+				</div>
+				<div class="card-list__item card">
+					<span class="material-icons">verified</span>
+					<p>Styled-components</p>
+				</div>
+				<div class="card-list__item card">
+					<span class="material-icons">verified</span>
+					<p>Css modules</p>
+				</div>
+			</div>
+		</section>
+		<section class="home__section container">
+			<h2>Projetos</h2>
+			<picture>
+				<source media="(min-width:577px)" srcset="./assets/symbol-large.jpg" />
+				<source media="(min-width:0px)" srcset="./assets/symbol-small.jpg" />
+				<!-- <source media="(min-width:465px)" srcset="img_white_flower.jpg" /> -->
+				<img src="img_orange_flowers.jpg" alt="Flowers" style="width: auto" />
+			</picture>
+			<p>
+				Demos de Apps simples, feito de maneiras ou com bibliotecas diferentes.
+			</p>
+			<a target="_blank" href="https://codesandbox.io/s/lampada-toggle-f32gc">
+				<h3>Básico do React com esse app Minimalista.</h3>
+			</a>
+			<ul>
+				<li><p>Entenda o fluxo básico do react.</p></li>
+			</ul>
+			<a
+				target="_blank"
+				href="https://codesandbox.io/s/todo-app-pure-react-state-management-bm7uk"
+			>
+				<h3>Todo App</h3>
+			</a>
+			<ul>
+				<li>
+					<p>Estado gerenciado pelo useReducer do react e outros hooks</p>
+				</li>
+			</ul>
+			<a
+				target="_blank"
+				href="https://claytonsantos.github.io/#/projects:~:text=Todo%20app%20%2D%20React%20%2B%20Redux%20Toolkit"
+			>
+				<h3>Todo app - React + Redux Toolkit</h3>
+			</a>
+			<ul>
+				<li>Redux-toolkit</li>
+				<li>Seletores memoizados</li>
+			</ul>
+		</section>
+	</body>
 </html>
+
+<!--
+
+<section class="timeline layout--section" key="2">
+    <h2>Projetos</h2>
+    <p>
+        Eu gosto de estudar como as coisas funcionam, então eu crio apps
+        rápidos, que usam tecnologias específicas. Aqui estão alguns Apps
+        simples, feito de maneiras diferentes ou com bibliotecas diferentes.
+    </p>
+    <ul id="codesandbox-list" class="codesandbox-list">
+        <li class="codesandbox-list__item">
+            <a
+                @click.prevent="handleGoSandBoxModel('https://codesandbox.io/s/lampada-toggle-f32gc')"
+                class="codesandbox-list__link"
+            >
+                <h3 class="codesandbox-list__title">
+                    Entenda o estado básico do react com esse app Minimalista.
+                </h3>
+                <span class="material-icons codesandbox-list_new-tab-icon"
+                    >open_in_new
+                </span>
+            </a>
+            <div class="icon-box">
+                <span class="material-icons tech-list__icon">verified</span>
+                <p>Entenda o fluxo básico do estado do react.</p>
+            </div>
+        </li>
+        <li class="codesandbox-list__item">
+            <a
+                @click.prevent="handleGoSandBoxModel('https://codesandbox.io/s/todo-app-pure-react-state-management-bm7uk')"
+                class="codesandbox-list__link"
+            >
+                <h3 class="codesandbox-list__title">Todo app - React</h3>
+                <span class="material-icons codesandbox-list_new-tab-icon"
+                    >open_in_new</span
+                >
+            </a>
+            <div class="icon-box">
+                <span class="material-icons tech-list__icon">verified</span>
+                <p>
+                    Estado gerenciado pelo useReducer, do react e uso dos outros
+                    hooks.
+                </p>
+            </div>
+        </li>
+        <li class="codesandbox-list__item">
+            <a
+                @click.prevent="handleGoSandBoxModel('https://codesandbox.io/s/todo-app-with-redux-toolkit-slice-state-management-tgdzk?file=/readme.md')"
+                class="codesandbox-list__link"
+            >
+                <h3 class="codesandbox-list__title">
+                    Todo app - React + Redux Toolkit
+                </h3>
+                <span class="material-icons codesandbox-list_new-tab-icon"
+                    >open_in_new</span
+                >
+            </a>
+            <p>
+                Redux toolkit é fantastico. Ele é um conjunto oficial de
+                ferramentas que melhoram o desenvolvimento de redux.
+            </p>
+            <div class="icon-box">
+                <span class="material-icons tech-list__icon">verified</span>
+                <p>Estado Global usando Redux Tookit</p>
+            </div>
+            <div class="icon-box">
+                <span class="material-icons tech-list__icon">verified</span>
+                <p>Criação de seletores memoizados</p>
+            </div>
+            <div class="icon-box" style="display: flex, align-items: center">
+                <span class="material-icons tech-list__icon">verified</span>
+                <p>
+                    Não se preocupe com atualizações profundas com spread operator.
+                    Tookit facilita a vida.
+                    <span class="material-icons">favorite</span>
+                </p>
+            </div>
+        </li>
+    </ul>
+</section>
+ <footer class="app_footer">
+    <router-link to="/experiencia" class="app_footer__link">
+        <span class="material-icons md-36 app_footer__icon">articleicon</span>
+    </router-link>
+    <router-link to="/timeline" class="app_footer__link">
+        <span class="material-icons md-36 app_footer__icon">timelineicon</span>
+    </router-link>
+    <router-link to="/projects" class="app_footer__link">
+        <span class="material-icons md-36 app_footer__icon">codeicon</span>
+    </router-link>
+</footer> -->
+
+<!-- header -->
+<!-- <header class="app-header" id="app-header">
+    <div class="mode-icon-container">
+        <span
+            class="material-icons light_mode-icon"
+            v-bind:class="{ 'active': !themeIsDark }"
+        >
+            light_mode
+        </span>
+        <span
+            class="material-icons dark_mode-icon"
+            v-bind:class="{ 'active': themeIsDark }"
+        >
+            dark_mode
+        </span>
+    </div>
+</header> -->

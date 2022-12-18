@@ -2,16 +2,11 @@
     display: flex;
 }
 
-main {
-    margin-bottom: 0;
-}
-
 .home__soft-skills {
     text-align: start;
 }
 
 .app_footer {
-    display: none;
     background-color: var(--aside-bg);
 }
 
