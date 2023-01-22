@@ -4,20 +4,19 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet"
 		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
-			rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="index.css" />
 		<link href="media-sm.css" rel="stylesheet" media="(min-width: 600px)" />
 		<title>Clayton Santos - Desenvolvedor Front end</title>
 	</head>
 
-	<body class="theme--light">
+	<body>
 		<div id="app">
 			<aside class="app-aside">
 				<div class="img-perfil">
@@ -25,11 +24,12 @@
 				</div>
 				<nav class="aside-nav">
 					<a href="#about" class="aside-nav__link">Sobre mim</a>
+					<a href="#i-can-do" class="aside-nav__link">O que eu posso fazer</a>
 					<a href="#articles" class="aside-nav__link">Meus Artigos - Dev.to</a>
 					<a href="#projects" class="aside-nav__link">Mini Projects</a>
 				</nav>
 			</aside>
-			<main>
+			<div class="page">
 				<header class="app-header">
 					<div class="mode-icon-container">
 						<span
@@ -47,19 +47,22 @@
 					</div>
 				</header>
 
-				<div class="page-content">
-					<section id="about" class="home layout--section">
-						<div class="img-perfil home-img__perfil">
-							<img
-								src="https://ca.slack-edge.com/TBSD0716V-U022N2C67JS-d5e2b97140e1-512"
-							/>
+				<main>
+					<h1 class="layout--section">
+						Sou um desenvolvedor front end, trabalhando remotamente aqui de
+						florianópolis/brasil.
+					</h1>
+					<section id="about" class="about">
+						<div class="about-img__perfil">
+							<img src="./assets/foto-do-perfil.jpg" />
 						</div>
-						<div class="home__title-container"></div>
-						<div class="home__profile-description">
+						<div class="about__content">
 							<h2>
-								Sou um desenvolvedor front end, trabalhando remotamente aqui de
-								florianópolis/brasil.
+								Resumo
 							</h2>
+							<h3>
+								Primeiro contato com Programação
+							</h3>
 							<p>
 								Meu primeiro contato com programação foi na faculdade. Diferente
 								de muitas pessoas da universidade, eu não tinha uma base na
@@ -102,189 +105,181 @@
 							</p>
 						</div>
 					</section>
-
-				<section class="my-articles layout--section">
-					<h2>Meus Artigos no dev.to</h2>
 					
+					<section id="i-can-do" class="i-can-do layout--section">
+						<h2>O que eu posso fazer</h2>
+						<h3>Base</h3>
 
-					<ul id="codesandbox-list" class="list">
-						<li>
-							<a href="https://dev.to/mechamoclayton/reactjs-o-8020-do-seu-melhor-e-mais-performatico-codigo-3ag2" target="_blank"
-								class="list__link">
-								<h3 class="list__title">
-									Reactjs, o 80/20 do seu melhor e mais performático código.
-								</h3>
-								<span class="material-icons list_new-tab-icon">
-									open_in_new
+						<ul class="skill">
+							<li class="skill-item">
+								<span class="material-icons material-symbols-outlined">
+									rocket_launch
 								</span>
-							</a>
-						</li>
-
-						<li>
-							<a href="https://dev.to/mechamoclayton/redux-seu-useselector-hook-mais-perfomatico-3bo2" target="_blank"
-								class="list__link">
-								<h3 class="list__title">
-									Redux: Seu useSelector hook mais perfomático.
-								</h3>
-								<span class="material-icons list_new-tab-icon">
-									open_in_new
+								<p>Javascript</p>
+							</li>
+							<li class="skill-item">
+								<span class="material-icons material-symbols-outlined">
+									rocket_launch
 								</span>
-							</a>
-						</li>
-					</ul>
-				</section>
-				<section class="i-can-do layout--section">
-					<h2>O que eu posso fazer</h2>
-					<h3>Base</h3>
+								<p>Html5</p>
+							</li>
+							<li class="skill-item">
+								<span class="material-icons material-symbols-outlined">
+									rocket_launch
+								</span>
+								<p>Css3</p>
+							</li>
+							<li class="skill-item">
+								<span class="material-icons material-symbols-outlined">
+									rocket
+								</span>
+								<p>Manipulação do Dom</p>
+							</li>
+							<li class="skill-item">
+								<span class="material-icons material-symbols-outlined">
+									rocket
+								</span>
+								<p>Es6</p>
+							</li>
+						</ul>
 
-					<ul class="skill">
-						<li class="skill-item">
-							<span class="material-icons material-symbols-outlined tech-list__icon">
-								rocket_launch
-							</span>
-							<p>Javascript</p>
-						</li>
-						<li class="skill-item">
-							<span class="material-icons material-symbols-outlined tech-list__icon">
-								rocket_launch
-							</span>
-							<p>Html5</p>
-						</li>
-						<li class="skill-item">
-							<span class="material-icons material-symbols-outlined tech-list__icon">
-								rocket_launch
-							</span>
-							<p>Css3</p>
-						</li>
-						<li class="skill-item">
-							<span class="material-icons material-symbols-outlined tech-list__icon">
-								rocket
-							</span>
-							<p>Manipulação do Dom</p>
-						</li>
-						<li class="skill-item">
-							<span class="material-icons material-symbols-outlined tech-list__icon">
-								rocket
-							</span>
-							<p>Es6</p>
-						</li>
-					</ul>
+						<h3>Arquitetura css e bibliotecas</h3>
 
-					<h3>Arquitetura css e bibliotecas</h3>
+						<ul class="skill">
+							<li class="skill-item">
+								<span class="material-icons material-symbols-outlined css--icon">
+									css
+								</span>
+								<p>Bem Css</p>
+							</li>
+							<li class="skill-item">
+								<span class="material-icons material-symbols-outlined css--icon" >
+									css
+								</span>
+								<p>Sass</p>
+							</li>
+							<li class="skill-item">
+								<span class="material-icons material-symbols-outlined css--icon">
+									css
+								</span>
+								<p>Bootstrap</p>
+							</li>
+							<li class="skill-item">
+								<span class="material-icons material-symbols-outlined css--icon">
+									css
+								</span>
+								<p>Material Ui</p>
+							</li>
+						</ul>
 
-					<ul class="skill">
-						<li class="skill-item">
-							<span class="material-icons material-symbols-outlined tech-list__icon">
-								css
-							</span>
-							<p>Bem Css</p>
-						</li>
-						<li class="skill-item">
-							<span class="material-icons material-symbols-outlined tech-list__icon">
-								css
-							</span>
-							<p>Sass</p>
-						</li>
-						<li class="skill-item">
-							<span class="material-icons material-symbols-outlined tech-list__icon">
-								css
-							</span>
-							<p>Bootstrap</p>
-						</li>
-						<li class="skill-item">
-							<span class="material-icons material-symbols-outlined tech-list__icon">
-								css
-							</span>
-							<p>Material Ui</p>
-						</li>
-					</ul>
+						<h3>Css Moderno</h3>
 
-					<h3>Css Moderno</h3>
+						<ul class="skill">
+							<li class="skill-item">
+								<span class="material-icons material-symbols-outlined">
+									emoji_food_beverage
+								</span>
+								<p>Styled Componentes</p>
+							</li>
+							<li class="skill-item">
+								<span class="material-icons material-symbols-outlined">
+									emoji_food_beverage
+								</span>
+								<p>Css Modules</p>
+							</li>
+						</ul>
 
-					<ul class="skill">
-						<li class="skill-item">
-							<span class="material-icons material-symbols-outlined tech-list__icon">
-								emoji_food_beverage
-							</span>
-							<p>Styled Componentes</p>
-						</li>
-						<li class="skill-item">
-							<span class="material-icons material-symbols-outlined tech-list__icon">
-								emoji_food_beverage
-							</span>
-							<p>Css Modules</p>
-						</li>
-					</ul>
+						<h3>Reactjs e seu ecossistema</h3>
+						<ul class="skill">
+							<li class="skill-item">
+								<span class="material-icons material-symbols-outlined">
+									data_object
+								</span>
+								<p>Reactjs</p>
+							</li>
+							<li class="skill-item">
+								<span class="material-icons material-symbols-outlined">
+									data_object
+								</span>
+								<p>Nextjs</p>
+							</li>
+							<li class="skill-item">
+								<span class="material-icons material-symbols-outlined">
+									data_object
+								</span>
+								<p>Redux</p>
+							</li>
+							<li class="skill-item">
+								<span class="material-icons material-symbols-outlined">
+									data_object
+								</span>
+								<p>Redux Thunk</p>
+							</li>
+							<li class="skill-item">
+								<span class="material-icons material-symbols-outlined">
+									data_object
+								</span>
+								<p>Redux Saga</p>
+							</li>
+							<li class="skill-item">
+								<span class="material-icons material-symbols-outlined">
+									data_object
+								</span>
+								<p>Formik</p>
+							</li>
+						</ul>
 
-					<h3>Reactjs e seu ecossistema</h3>
-					<h4>Foco em boas práticas e perfomance</h4>
+						<h3>Misc</h3>
 
-					<ul class="skill">
-						<li class="skill-item">
-							<span class="material-icons material-symbols-outlined tech-list__icon">
-								data_object
-							</span>
-							<p>Reactjs</p>
-						</li>
-						<li class="skill-item">
-							<span class="material-icons material-symbols-outlined tech-list__icon">
-								data_object
-							</span>
-							<p>Nextjs</p>
-						</li>
-						<li class="skill-item">
-							<span class="material-icons material-symbols-outlined tech-list__icon">
-								data_object
-							</span>
-							<p>Redux</p>
-						</li>
-						<li class="skill-item">
-							<span class="material-icons material-symbols-outlined tech-list__icon">
-								data_object
-							</span>
-							<p>Redux Thunk</p>
-						</li>
-						<li class="skill-item">
-							<span class="material-icons material-symbols-outlined tech-list__icon">
-								data_object
-							</span>
-							<p>Redux Saga</p>
-						</li>
-						<li class="skill-item">
-							<span class="material-icons material-symbols-outlined tech-list__icon">
-								data_object
-							</span>
-							<p>Formik</p>
-						</li>
-					</ul>
-
-					<h3>Misc</h3>
-
-					<ul class="skill">
-						<li class="skill-item">
-							<span class="material-icons material-symbols-outlined tech-list__icon">
-								school
-							</span>
-							<p>Programação funcional</p>
-						</li>
-						<li class="skill-item">
-							<span class="material-icons material-symbols-outlined tech-list__icon">
-								school
-							</span>
-							<p>Clean Code</p>
-						</li>
-					</ul>
-				</section>
-
-					<!-- Projects -->
-
-					<section id="projects" class="timeline layout--section">
-						<h2>Projetos</h2>
-						<p>Demos de Apps simples, feito de maneiras ou com bibliotecas diferentes.</p>
+						<ul class="skill">
+							<li class="skill-item">
+								<span class="material-icons material-symbols-outlined">
+									school
+								</span>
+								<p>Programação funcional</p>
+							</li>
+							<li class="skill-item">
+								<span class="material-icons material-symbols-outlined">
+									school
+								</span>
+								<p>Clean Code</p>
+							</li>
+						</ul>
+					</section>
+					<section id="articles" class="my-articles layout--section">
+						<h2>Meus Artigos no dev.to</h2>
 						<ul id="codesandbox-list" class="list">
 							<li>
-								<a  @click.prevent="handleGoSandBoxModel('https://codesandbox.io/s/lampada-toggle-f32gc')"
+								<a href="https://dev.to/mechamoclayton/reactjs-o-8020-do-seu-melhor-e-mais-performatico-codigo-3ag2" target="_blank"
 									class="list__link">
+									<h3 class="list__title">
+										Reactjs, o 80/20 do seu melhor e mais performático código.
+									</h3>
+									<span class="material-icons list_new-tab-icon">
+										open_in_new
+									</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="https://dev.to/mechamoclayton/redux-seu-useselector-hook-mais-perfomatico-3bo2" target="_blank"
+									class="list__link">
+									<h3 class="list__title">
+										Redux: Seu useSelector hook mais perfomático.
+									</h3>
+									<span class="material-icons list_new-tab-icon">
+										open_in_new
+									</span>
+								</a>
+							</li>
+						</ul>
+					</section>
+					<section id="projects">
+						<h2>Projetos</h2>
+						<p>Demos de Apps simples, feito de maneiras ou com bibliotecas diferentes.</p>
+						<ul class="list">
+							<li>
+								<a class="list__link">
 									<h3 class="list__title">
 										Entenda o estado básico do react com esse app Minimalista.
 									</h3>
@@ -293,16 +288,13 @@
 									</span>
 								</a>
 								<div class="icon-box">
-									<span class="material-icons tech-list__icon">verified</span>
+									<span class="material-icons">verified</span>
 									<p>Entenda o fluxo básico do estado do react</p>
 								</div>
 							</li>
 						</ul>
 					<section/>
-
-					<!-- Projects Final -->
-				</div>
-
+				</main>
 				<footer class="app_footer">
 					<a href="#about" class="app_footer__link">
 						<span class="material-icons md-36 app_footer__icon"
@@ -313,29 +305,10 @@
 						<span class="material-icons md-36 app_footer__icon">codeicon</span>
 					</a>
 				</footer>
-			</main>
+			</div>
 		</div>
 	</body>
 	<script src="index.js"></script>
 </html>
 
-<!-- 
-	
-	<div class="modal-wrapper">
-	  <div class="modal">
-		<header class="modal__header">
-		  Um aviso :)
-		</header>
-		<div class="modal__content">
-		 As demos são melhores em dispositivos maiores.
-		</div>
-		<footer class="modal__footer">
-		  <button
-			class="modal__btn"
-			@click="closeModal()"
-		  >Ficar aqui</button>
-		  <button class="modal__btn">Ir para demo</button>
-		</footer>
-	  </div>
-	</div>
- -->
+ 
