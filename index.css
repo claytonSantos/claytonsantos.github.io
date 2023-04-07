@@ -121,11 +121,6 @@ a:visited {
     transition: all linear 0.2s;
 }
 
-main {
-    height: 100%;
-}
-
-
 .img-perfil {
     border-radius: 50%;
     overflow: hidden;
@@ -164,7 +159,7 @@ main {
 
 .list__link {
     position: relative;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     text-decoration: none;
 }
@@ -192,14 +187,12 @@ main {
 }
 
 .list__item {
-    margin-bottom: 16px;
+    margin-top: 32px;
 }
 
 .icon-box {
     display: flex;
     vertical-align: middle;
-    align-items: center;
-    margin-left: 1rem;
 }
 
 .icon-box > span {
@@ -207,7 +200,8 @@ main {
 }
 
 .icon-box > p {
-    margin: 4px;
+    margin: 0;
+    margin-left: 4px;
     display: flex;
     align-items: center;
 }
@@ -300,4 +294,8 @@ main {
 
 .my-articles h2 {
     margin-bottom: 24px;
+}
+
+.projects{
+    margin-bottom: 42px;
 }
