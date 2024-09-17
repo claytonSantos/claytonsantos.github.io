@@ -1,11 +1,12 @@
-h1 {
-    font-size: 36px;
-}
+    .profile__img {
+        height: 340px;
+        width: 340px;
+    }
 
-.app-aside {
-    display: flex;
-}
+    .section-skills__description {
+        font-size: 24px;
+    }
 
-.page {
-    padding: 0 32px;
-}
+    .mission-section>h2 {
+        font-size: 50px;
+    }

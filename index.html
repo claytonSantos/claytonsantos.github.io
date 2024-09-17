@@ -1,355 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/icon?family=Material+Icons"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="index.css" />
-		<link href="media-sm.css" rel="stylesheet" media="(min-width: 600px)" />
-		<title>Clayton Santos - Desenvolvedor Front end</title>
-	</head>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="index.css" />
+	<link href="media-sm.css" rel="stylesheet" media="(min-width: 576px)" />
+	<link href="media-md.css" rel="stylesheet" media="(min-width: 768px)" />
+	<link href="media-lg.css" rel="stylesheet" media="(min-width: 992px)" />
+	<link href="media-xl.css" rel="stylesheet" media="(min-width: 1200px)" />
+	<title>Clayton Santos - Desenvolvedor Front-end</title>
+</head>
 
-	<body class="theme--light">
-		<div id="app">
-			<aside class="app-aside">
-				<div class="img-perfil">
-					<img
-						src="./assets/foto-do-perfil.jpg"
-						alt="imagem de perfil de Clayton Santos"
-					/>
-				</div>
-				<nav class="aside-nav">
-					<a href="#about" class="aside-nav__link">Sobre mim</a>
-					<a href="#i-can-do" class="aside-nav__link">O que eu posso fazer</a>
-					<a href="#articles" class="aside-nav__link">Meus Artigos - Dev.to</a>
-					<a href="#projects" class="aside-nav__link">Mini Projects</a>
-				</nav>
-			</aside>
-			<div class="page">
-				<header class="app-header">
-					<div class="mode-icon-container">
-						<span id="enableLightMode" class="material-icons light_mode-icon">
-							light_mode
-						</span>
-						<span id="enableDarkMode" class="material-icons dark_mode-icon">
-							dark_mode
-						</span>
-					</div>
-				</header>
-				<main>
-					<div class="about-img__perfil">
-						<img
-							src="./assets/foto-do-perfil.jpg"
-							alt="imagem de perfil de Clayton Santos"
-						/>
-					</div>
-					<h1 class="layout--section">
-						Oi, @mechamoclayton. Sou um desenvolvedor front-end, trabalhando
-						remotamente aqui de Florianópolis, Brasil.
-					</h1>
-					<section id="about" class="about">
-						<div class="about__content">
-							<h2>Resumo</h2>
-							<h3>Primeiro contato com Programação</h3>
-							<p>
-								Meu primeiro contato com programação foi na faculdade. Diferente
-								de muitas pessoas da universidade, eu não tinha uma base na
-								programação. Eu experimentei as linguagens C e JAVA. Eu curtia
-								criar interfaces em java. Eu precisava de uma oportunidade na
-								área, e o mercado exigia coisas diferentes do que a universidade
-								ensinava. Eu sabia que precisava estudar algumas coisas sozinho.
-							</p>
-							<h3>Primeiro estágio</h3>
-							<p>
-								Eu comprei um livro de Hml5/Css3 e comecei a praticar. Depois de
-								alguns dias eu consegui um estágio numa agência de marketing
-								digital. Todos os layouts eram exclusivos por cliente, então eu
-								pude criar sites com diversos tipos de layouts, usando html,
-								css, javascript e wordpress.
-							</p>
-							<h3>Hackaton</h3>
-							<p>
-								Um tempo depois, eu fui selecionado em um hackaton para outro
-								estágio. Eu era responsável por criar os componentes criados
-								pelo UX, com html, css e javascript puro. Eu estudei bastante
-								sobre como criar componentes com css escalável e reutilizável.
-								Eu aprendi muito como usar a api do Browser para controlar os
-								meus componentes apenas com Javascript. Aqui eu trabalhei um
-								pouco com Reactjs.
-							</p>
-							<h3>Empregos</h3>
-							<p>
-								Eu fiquei pouco mais de um ano no meu último estágio, até
-								receber uma proposta para trabalhar profissionalmente como
-								FrontEnd. Desde então, eu tenho trabalhado e estudado muito
-								Javascript e Reactjs. Eu já usei outras libs com Vuejs e
-								Angular, mas minha paixão foi pelo React, Por isso, eu venho me
-								aperfeiçoando sobre aspectos de perfomance, padrões e etc. Esses
-								estudos, também fizeram com que eu contribuísse mais com a minha
-								equipe, fazendo revisões de códigos do meus colegas, propondo
-								soluções e removendo anti-padrões que o tempo fixou na base de
-								código.
-							</p>
-						</div>
-					</section>
-
-					<section id="i-can-do" class="i-can-do layout--section">
-						<h2>O que eu posso fazer</h2>
-						<h3>Base</h3>
-
-						<ul class="skill">
-							<li class="skill-item">
-								<span class="material-icons material-symbols-outlined">
-									rocket_launch
-								</span>
+<body>
+	<main id="app">
+		<section class="section-intro section-intro-js">
+			<div class="profile container">
+				<img src="./assets/foto-perfil.jpg" class="profile__img profile-img-js" />
+				<h1 class="profile__title headline profile-title-js">
+					Olá, me chamo <span class="gradient-text ">Clayton Santos</span>.<br>Desenvolvedor Front-End.
+				</h1>
+			</div>
+		</section>
+		<div id="page1" class="mission-section mission-section-js">
+			<div class="overlay"></div>
+            <h2 class="mission-section-title-js">Eu desenvolvo interfaces para ajudar as pessoas a expressarem seus interesses, paixões e propósitos.</h2>
+			<video src="/assets/nature.mp4" autoplay loop muted playsinline></video>
+        </div>
+		<section class="section-skills">
+			<h2 class="headline viewport-content gradient-text anime-txt">Habilidades</h2>
+			<p class="viewport-content section-skills__description">
+				Com uma base sólida em HTML, CSS e JavaScript, minha jornada no front-end começou com interfaces dinâmicas e evoluiu para a criação de componentes escaláveis e reutilizáveis.
+				Ao longo de diversas experiências, desde hackathons até trabalho profissional, tenho me especializado em React, com foco em performance e boas práticas de desenvolvimento.
+				Minha capacidade de analisar e otimizar códigos, aliada à paixão por colaborar com equipes e aprender novas tecnologias, 
+				faz de mim um desenvolvedor versátil, capaz de adaptar-se às necessidades específicas de qualquer projeto. 
+			</p>
+			<div class="skills viewport-content section-skill-js">
+				<div class="skills__content">
+					<div class="panel-text">
+						<h2 class="skills__category">Interatividade</h2>
+						<ul class="technology-list">
+							<li class="technology-item">
 								<p>Javascript</p>
 							</li>
-							<li class="skill-item">
-								<span class="material-icons material-symbols-outlined">
-									rocket_launch
-								</span>
-								<p>Html5</p>
+							<li class="technology-item">
+								<p>React</p>
 							</li>
-							<li class="skill-item">
-								<span class="material-icons material-symbols-outlined">
-									rocket_launch
-								</span>
+							<li class="technology-item">
+								<p>NextJs</p>
+							</li>
+							<li class="technology-item">
+								<p>Redux (Thunk, Saga)</p>
+							</li>
+							<li class="technology-item">
+								<p>Formik, Hook Form</p>
+							</li>
+						</ul>
+					</div>
+					<div class="panel-text">
+						<h2 class="skills__category">Estilos</h2>
+						<ul class="technology-list">
+							<li class="technology-item">
 								<p>Css3</p>
 							</li>
-							<li class="skill-item">
-								<span class="material-icons material-symbols-outlined">
-									rocket
-								</span>
-								<p>Manipulação do Dom</p>
-							</li>
-							<li class="skill-item">
-								<span class="material-icons material-symbols-outlined">
-									rocket
-								</span>
-								<p>Es6</p>
-							</li>
-						</ul>
-
-						<h3>Arquitetura css e bibliotecas</h3>
-
-						<ul class="skill">
-							<li class="skill-item">
-								<span
-									class="material-icons material-symbols-outlined css--icon"
-								>
-									css
-								</span>
-								<p>Bem Css</p>
-							</li>
-							<li class="skill-item">
-								<span
-									class="material-icons material-symbols-outlined css--icon"
-								>
-									css
-								</span>
+							<li class="technology-item">
 								<p>Sass</p>
 							</li>
-							<li class="skill-item">
-								<span
-									class="material-icons material-symbols-outlined css--icon"
-								>
-									css
-								</span>
+							<li class="technology-item">
 								<p>Bootstrap</p>
 							</li>
-							<li class="skill-item">
-								<span
-									class="material-icons material-symbols-outlined css--icon"
-								>
-									css
-								</span>
-								<p>Material Ui</p>
+							<li class="technology-item">
+								<p>Material-UI, Styled Components, Css Modules</p>
 							</li>
 						</ul>
-
-						<h3>Css Moderno</h3>
-
-						<ul class="skill">
-							<li class="skill-item">
-								<span class="material-icons material-symbols-outlined">
-									emoji_food_beverage
-								</span>
-								<p>Styled Componentes</p>
+					</div>
+					<div class="panel-text">
+						<h2 class="skills__category">Estrutura</h2>
+						<ul class="technology-list">
+							<li class="technology-item">
+								<p>Html5</p>
 							</li>
-							<li class="skill-item">
-								<span class="material-icons material-symbols-outlined">
-									emoji_food_beverage
-								</span>
-								<p>Css Modules</p>
+							<li class="technology-item">
+								<p>DOM</p>
 							</li>
 						</ul>
-
-						<h3>Reactjs e seu ecossistema</h3>
-						<ul class="skill">
-							<li class="skill-item">
-								<span class="material-icons material-symbols-outlined">
-									data_object
-								</span>
-								<p>Reactjs</p>
-							</li>
-							<li class="skill-item">
-								<span class="material-icons material-symbols-outlined">
-									data_object
-								</span>
-								<p>Nextjs</p>
-							</li>
-							<li class="skill-item">
-								<span class="material-icons material-symbols-outlined">
-									data_object
-								</span>
-								<p>Redux</p>
-							</li>
-							<li class="skill-item">
-								<span class="material-icons material-symbols-outlined">
-									data_object
-								</span>
-								<p>Redux Thunk</p>
-							</li>
-							<li class="skill-item">
-								<span class="material-icons material-symbols-outlined">
-									data_object
-								</span>
-								<p>Redux Saga</p>
-							</li>
-							<li class="skill-item">
-								<span class="material-icons material-symbols-outlined">
-									data_object
-								</span>
-								<p>Formik</p>
-							</li>
-						</ul>
-
-						<h3>Misc</h3>
-
-						<ul class="skill">
-							<li class="skill-item">
-								<span class="material-icons material-symbols-outlined">
-									school
-								</span>
-								<p>Programação funcional</p>
-							</li>
-							<li class="skill-item">
-								<span class="material-icons material-symbols-outlined">
-									school
-								</span>
-								<p>Clean Code</p>
-							</li>
-						</ul>
-					</section>
-					<section id="articles" class="my-articles layout--section">
-						<h2>Meus Artigos no dev.to</h2>
-						<ul id="codesandbox-list" class="list">
-							<li>
-								<a
-									href="https://dev.to/mechamoclayton/reactjs-o-8020-do-seu-melhor-e-mais-performatico-codigo-3ag2"
-									target="_blank"
-									class="list__link"
-								>
-									<h3 class="list__title">
-										Reactjs, o 80/20 do seu melhor e mais performático código.
-									</h3>
-									<span class="material-icons list_new-tab-icon">
-										open_in_new
-									</span>
-								</a>
-							</li>
-
-							<li>
-								<a
-									href="https://dev.to/mechamoclayton/redux-seu-useselector-hook-mais-perfomatico-3bo2"
-									target="_blank"
-									class="list__link"
-								>
-									<h3 class="list__title">
-										Redux: Seu useSelector hook mais perfomático.
-									</h3>
-									<span class="material-icons list_new-tab-icon">
-										open_in_new
-									</span>
-								</a>
-							</li>
-						</ul>
-					</section>
-					<section id="projects" class="projects">
-						<h2>Projetos</h2>
-						<p>
-							Demos de Apps simples, feito de maneiras ou com bibliotecas
-							diferentes.
-						</p>
-						<ul class="list">
-							<li class="list__item">
-								<div class="icon-box">
-									<span class="material-icons">verified</span>
-									<p>
-										useState: o estado básico do react com esse app Minimalista
-									</p>
-								</div>
-								<a
-									class="list__link"
-									href="https://codesandbox.io/s/lampada-toggle-f32gc"
-									target="_blank"
-								>
-									<h3 class="list__title">Ver Demo</h3>
-									<span class="material-icons list_new-tab-icon">
-										open_in_new
-									</span>
-								</a>
-							</li>
-							<li class="list__item">
-								<div class="icon-box">
-									<span class="material-icons">verified</span>
-									<p>
-										Todo App: estado do app gerenciado pelo useReducer, do
-										próprio React.
-									</p>
-								</div>
-								<a
-									class="list__link"
-									href="https://codesandbox.io/s/todo-app-pure-react-state-management-usereducer-j2z347"
-									target="_blank"
-								>
-									<h3 class="list__title">Ver Demo</h3>
-									<span class="material-icons list_new-tab-icon">
-										open_in_new
-									</span>
-								</a>
-							</li>
-							<li class="list__item">
-								<div class="icon-box">
-									<span class="material-icons">verified</span>
-									<p>Todo App: react + redux + redux thunk.</p>
-								</div>
-								<a
-									class="list__link"
-									href="https://codesandbox.io/s/todo-with-pure-redux-thunk-u5sbju"
-									target="_blank"
-								>
-									<h3 class="list__title">Ver Demo</h3>
-									<span class="material-icons list_new-tab-icon">
-										open_in_new
-									</span>
-								</a>
-							</li>
-						</ul>
-					</section>
-				</main>
+					</div>
+				</div>
+				<div class="skills_imgs">
+					<div class="panel js"></div>
+					<div class="panel css"></div>
+					<div class="panel html"></div>
+				</div>
 			</div>
-		</div>
-	</body>
-	<script src="index.js"></script>
+		</section>
+		<section class="section-article-on-dev-to">
+			<h2 class="headline anime-txt">Meus Artigos no dev.to</h2>
+			<ul class="articles-on-devto__list">
+				<li class="articles-on-devto-list__item">
+					<a href="https://dev.to/mechamoclayton/reactjs-o-8020-do-seu-melhor-e-mais-performatico-codigo-3ag2" target="_blank" class="list__link">
+						<p class="articles-on-devto-list__title">
+							Reactjs, o 80/20 do seu melhor e mais performático código.
+						</p>
+						<span class="material-symbols-outlined">
+							open_in_new
+						</span>
+					</a>
+				</li>
+				<li class="articles-on-devto-list__item">
+					<a href="https://dev.to/mechamoclayton/redux-seu-useselector-hook-mais-perfomatico-3bo2" target="_blank" class="list__link">
+						<p class="articles-on-devto-list__title">
+							Redux: Seu useSelector hook mais perfomático.
+						</p>
+						<span class="material-symbols-outlined">
+							open_in_new
+						</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+	</main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="index.js"></script>
+
 </html>

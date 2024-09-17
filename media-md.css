@@ -1,0 +1,22 @@
+    .skills {
+        height: 800px;
+        justify-content: space-around;
+    }
+
+    .skills__content {
+        height: 400px;
+    }
+
+    .panel-text {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        right: 0%;
+        bottom: 0%;
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    .skills_imgs {
+        display: initial;
+    }
